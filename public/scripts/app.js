@@ -21,7 +21,7 @@ var renderChallenge = function renderChallenge() {
         React.createElement(
             'button',
             { onClick: handleToggle },
-            'Show Details'
+            isToggled ? 'Hide Details' : 'Show Details'
         ),
         isToggled && React.createElement(
             'p',

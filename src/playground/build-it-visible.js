@@ -11,7 +11,7 @@ const renderChallenge = () => {
     const template = (
         <div>
             <h1>Visibility Toggle</h1>
-            <button onClick={handleToggle}>Show Details</button>
+            <button onClick={handleToggle}>{isToggled ? 'Hide Details':'Show Details'}</button>
             {isToggled &&
                 <p>Hey there!</p>
             }
